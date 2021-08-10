@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crear</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,100;1,300&display=swap" rel="stylesheet">
+    
+    <link rel=StyleSheet href="../css/index.css" type="text/css" media=screen> 
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid o-nav">
+          <a class="navbar-brand" style="color: white; font-family: 'Roboto'" href="../html/menu-u.html">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active " style="color: white; font-family: 'Roboto'"aria-current="page" href="../html/index.html">cerrar</a>
+              
+              
+            </div>
+          </div>
+        </div>
+      </nav>
+    <div class="general"> 
+        <div class="Cardcontainer">
+           
+          <div class="card" >
+          <div class="card-body">
+            <h5 class="card-title , Fuentetitulos">Crear usuario</h5>
+            
+            <form id="singup-from1">
+             <div class="form-group">
+              
+              <input  type="email"  id="singup-email1" class="form-control , Iniciofuente"  aria-describedby="emailHelp" placeholder="Correo electronico" required>
+              
+             </div>
+            
+             <div class="form-group">
+              <input type="password" id="singup-contrasena1" class="form-control  , Iniciofuente"  placeholder="Contraseña" required>
+             </div>
+
+             
+               <select  id="rol" class="form-select Iniciofuente" aria-label="Default select example">
+                <option selected>selecciona un rol</option>
+                <option value="administrador">administrador</option>
+                <option value="cliente">cliente</option>
+                
+              </select>
+             
+            
+           </form>
+             <div class="o-buttoncontainer">
+              <a  type="button" onclick="Btn()" id="inicio" href="#" class="btn btn-primary , o-btn  o-btnGogle">Crear </a>
+              </div>
+             </div>
+             </div>
+        
+        </div>
+        </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>  
+
+<!-- firebase -->
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
+    
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    
+    <script>
+    
+      
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyBMB4JaMWQEuL1Hq2iMrLqgaGcB3tY1Wnc",
+        authDomain: "fb-trabajogrado.firebaseapp.com",
+        projectId: "fb-trabajogrado",
+        storageBucket: "fb-trabajogrado.appspot.com",
+        messagingSenderId: "746728766354",
+        appId: "1:746728766354:web:327cd0d6085d0bc28b5f4b"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+         
+      var db = firebase.firestore();
+        
+     
+      
+    </script>
+
+<script src="../javasc/usuarios.js"></script>
+
+</body>
+</html>

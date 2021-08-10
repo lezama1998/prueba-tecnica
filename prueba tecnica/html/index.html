@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,100;1,300&display=swap" rel="stylesheet">
+    
+    <link rel=StyleSheet href="../css/index.css" type="text/css" media=screen> 
+   
+</head>
+<div class="general"> 
+<div class="Cardcontainer">
+   
+  <div class="card" >
+  <div class="card-body">
+    <h5 class="card-title , Fuentetitulos">Inicia sesión</h5>
+    
+    <form id="singup-from1">
+     <div class="form-group">
+      
+      <input  type="email"  id="singup-email1" class="form-control , Iniciofuente"  aria-describedby="emailHelp" placeholder="Correo electronico" required>
+      
+     </div>
+    
+     <div class="form-group">
+      <input type="password" id="singup-contrasena1" class="form-control  , Iniciofuente"  placeholder="Contraseña" required>
+     </div>
+    
+     
+    
+   </form>
+     <div class="o-buttoncontainer">
+      <a  type="button" onclick="Btn()" id="inicio" href="#" class="btn btn-primary , o-btn  o-btnGogle">Iniciar sesión </a>
+      </div>
+     </div>
+     </div>
+
+</div>
+</div>
+<body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+<!-- firebase -->
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
+    
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    
+    <script>
+    
+      
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyBMB4JaMWQEuL1Hq2iMrLqgaGcB3tY1Wnc",
+        authDomain: "fb-trabajogrado.firebaseapp.com",
+        projectId: "fb-trabajogrado",
+        storageBucket: "fb-trabajogrado.appspot.com",
+        messagingSenderId: "746728766354",
+        appId: "1:746728766354:web:327cd0d6085d0bc28b5f4b"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+         
+      var db = firebase.firestore();
+        
+     
+      
+    </script>
+
+<script src="../javasc/index.js"></script>
+
+
+
+  </body>
+</html>
